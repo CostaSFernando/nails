@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 5vh;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  transition-duration: 1s;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 50%;
+  background-color: currentColor;
+  position: fixed;
+  top: 35px;
+}
+
+.header ul {
+  padding: 0;
+}
+
+.h-black {
+  background-color: #00000098;
+  color: white;
+  transition-duration: 1s;
+}

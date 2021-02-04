@@ -1,0 +1,55 @@
+.calendar {
+  height: 50%;
+  width: 35%;
+  min-width: 303px;
+  min-height: 465px;
+}
+.list-agendamentos {
+  width: 65%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-agendamento {
+  margin: 5px 0 5px 0;
+  width: 95%;
+  height: 20%;
+  min-height: 60px;
+  box-shadow: 1px 1px 20px 0px #0000002e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card-agendamento > .name {
+  width: 75%;
+  height: 20%;
+}
+
+.card-agendamento > span {
+  width: 25%;
+  height: 20%;
+}
+
+.card-agendamento > .descricao {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-agendamento > .horario {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

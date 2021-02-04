@@ -1,0 +1,28 @@
+<div class="container-route">
+  <div class="calendar">
+    <app-agenda [callback]="selectDate"></app-agenda>
+  </div>
+  <div class="list-agendamentos">
+    <ng-container *ngFor="let agendamento of horarios">
+      <div class="card-agendamento">
+        <h3 class="name">
+          {{ agendamento.cliente }}
+        </h3>
+        <span>
+          Valor: R$ {{ agendamento.valor}}
+        </span>
+        <p class="descricao">
+          {{ agendamento.descricao }}
+        </p>
+        <div class="horario">
+          <span>
+            Das {{ agendamento.horario.inicio | date: 'HH:mm' }} Hrs
+          </span>
+          <span>
+            As {{ agendamento.horario.fim | date: 'HH:mm' }} Hrs
+          </span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

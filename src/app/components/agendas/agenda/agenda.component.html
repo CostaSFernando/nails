@@ -1,0 +1,91 @@
+<div class="container__calendario">
+  <div class="conteudo">
+    <div
+      class="calendario"
+      style="
+        max-width: 100%;
+        max-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 80%;
+      "
+    >
+      <header>
+        <h4 id="ano">{{ ano }}</h4>
+        <h2 id="mes">{{ nameMes }}</h2>
+        <a class="btn-ant" id="btn_prev" (click)="botao_anterior()"><</a>
+        <a class="btn-pro" id="btn_next" (click)="botao_proximo()">></a>
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <td>DOM</td>
+            <td>SEG</td>
+            <td>TER</td>
+            <td>QUA</td>
+            <td>QUI</td>
+            <td>SEX</td>
+            <td>SAB</td>
+          </tr>
+        </thead>
+        <tbody id="dias">
+          <tr>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+          </tr>
+          <tr>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+          </tr>
+          <tr>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+          </tr>
+          <tr>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+          </tr>
+
+          <tr>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+          </tr>
+          <tr>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+            <td (click)="selectDate($event)"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
