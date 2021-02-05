@@ -25,6 +25,7 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   padding: 10px;
+  background-color: white;
 }
 
 .card-agendamento > .name {
